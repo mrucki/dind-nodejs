@@ -21,13 +21,3 @@ RUN apt-get install -y docker-ce
 
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 RUN apt-get install -y nodejs
-
-RUN npm -version
-RUN node --version
-
-ADD ./docker-deamon.sh /usr/local/bin/docker-deamon
-RUN chmod +x /usr/local/bin/docker-deamon
-
-VOLUME /var/lib/docker
-
-CMD [ "docker-deamon" ]
