@@ -1,6 +1,4 @@
 # dind-nodejs
-Gitlab docker-in-docker with NodeJS included
-
 Docker image with NodeJS 11 and docker included mostly used for GitLab CI/CD pipeline (in .gitlab-ci.yml configuration)
 
 Example for .gitlab-ci.yml
